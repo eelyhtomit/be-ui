@@ -98,6 +98,14 @@ $utilities: (
       'fixed': fixed,
     ),
   ),
+  'text-align': (
+    'prefix': 'text',
+    values: (
+      'center': center,
+      'left': left,
+      'right': right,
+    ),
+  ),
   'visibility': (
     'prefix': 'visibility',
     values: (

@@ -2004,6 +2004,93 @@ p, h1, h2, h3, h4, h5, h6 {
     position: fixed !important;
   }
 }
+.text-center {
+  text-align: center !important;
+}
+
+@media screen and (max-width: 599px) {
+  .text-xs-center {
+    text-align: center !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+@media screen and (min-width: 1904px) {
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+.text-left {
+  text-align: left !important;
+}
+
+@media screen and (max-width: 599px) {
+  .text-xs-left {
+    text-align: left !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+}
+@media screen and (min-width: 1904px) {
+  .text-xl-left {
+    text-align: left !important;
+  }
+}
+.text-right {
+  text-align: right !important;
+}
+
+@media screen and (max-width: 599px) {
+  .text-xs-right {
+    text-align: right !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .text-sm-right {
+    text-align: right !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .text-md-right {
+    text-align: right !important;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .text-lg-right {
+    text-align: right !important;
+  }
+}
+@media screen and (min-width: 1904px) {
+  .text-xl-right {
+    text-align: right !important;
+  }
+}
 .visibility-hidden {
   visibility: hidden !important;
 }
@@ -4350,6 +4437,13 @@ body {
   font-size: 16px;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 aside {
   min-width: 300px;
 }
@@ -4379,8 +4473,14 @@ article p {
 
 .archive {
   background: black;
-  padding: 3rem 5rem;
+  padding: 2rem 5rem;
   color: white;
+}
+@media screen and (max-width: 959px) {
+  .archive {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .archive__content {
   text-align: center;
@@ -4470,11 +4570,15 @@ article p {
 .color-twitter {
   color: #1DA1F2;
 }
+.color-white {
+  color: white;
+}
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
   min-height: 100vh;
+  position: relative;
 }
 
 .home-page__top {
@@ -4492,6 +4596,14 @@ article p {
   overflow: hidden;
   color: white;
   aspect-ratio: 16/9;
+}
+@media screen and (max-width: 959px) {
+  .featured.long {
+    aspect-ratio: 1/1;
+  }
+}
+.featured.long img {
+  height: 100%;
 }
 .featured:not(:first-child) {
   aspect-ratio: initial;
@@ -4549,6 +4661,9 @@ article p {
   top: 0;
   width: 100%;
 }
+.featured__image.long:before {
+  background-image: linear-gradient(transparent 0%, #121217);
+}
 .featured__image img {
   width: 100%;
 }
@@ -4568,6 +4683,9 @@ article p {
   .featured__title {
     font-size: 1rem !important;
   }
+  .featured__title.long {
+    font-size: 1.5rem !important;
+  }
 }
 .featured__content {
   left: 0;
@@ -4575,6 +4693,17 @@ article p {
   position: absolute;
   bottom: 10px;
   width: 100%;
+}
+.featured__content.long {
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  bottom: auto;
+}
+.featured__content.long .featured__title {
+  font-family: "Bebas Neue", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
 }
 .featured__content--author {
   margin-bottom: 0;
@@ -4652,6 +4781,29 @@ article p {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+.search {
+  position: absolute;
+  width: 100%;
+  background: #333;
+  padding: 2px 5px;
+  display: flex;
+  justify-content: center;
+}
+.search-bar {
+  background: #444;
+  color: white;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+.search-btn {
+  background: #444;
+  color: white;
+  font-size: 1.5rem;
+  border: 0;
 }
 
 .tags {

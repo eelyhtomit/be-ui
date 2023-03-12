@@ -71,10 +71,7 @@
 
                         <div class="action">
                             <a href="#" class="text-d">
-                                <h4 class="action__heading">"WATCH LIVE! UFC 285 PPV: TWO TITLE FIGHTS! JON JONES VS
-                                    CIRYL GANE for the VACANT UFC WORLD HEAVYWEIGHT CHAMPIONSHIP & VALENTINA SHEVCHENKO
-                                    defends the UFC FLYWEIGHT TITLE against ALEXA GRASSO | MAR 04, 2023! #UFCVEGAS
-                                    #TMOBILEARENA
+                                <h4 class="action__heading">WATCH LIVE! UFC 285 PPV: JONES VS GANE & SHEVCHENKO vs. GRASSO
                                 </h4>
                             </a>
 

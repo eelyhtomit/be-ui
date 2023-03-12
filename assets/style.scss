@@ -11,6 +11,13 @@ body {
     font-size: 16px; 
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 aside {
     min-width: 300px; 
 }
@@ -44,8 +51,13 @@ article {
 
 .archive {
     background: black;
-    padding: 3rem 5rem;
+    padding: 2rem 5rem;
     color: white;
+    
+    @include media(smAndDown) {
+        padding-left: $container-padding;
+        padding-right: $container-padding;
+    }
     
     &__content {
         text-align: center;
@@ -145,6 +157,10 @@ article {
     &-twitter {
         color: #1DA1F2;
     }
+    
+    &-white {
+        color: white;
+    }
 }
 
 
@@ -152,6 +168,7 @@ article {
     max-width: 1100px;
     margin: 0 auto;
     min-height: 100vh;
+    position: relative;
 }
 
 .home-page {
@@ -171,6 +188,16 @@ article {
     overflow: hidden;
     color: white;
     aspect-ratio: 16 / 9;
+    
+    &.long {
+        @include media(smAndDown) {
+            aspect-ratio: 1 / 1;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
     
     &:not(:first-child) {
         aspect-ratio: initial;
@@ -236,6 +263,12 @@ article {
             width: 100%;
         }
         
+        &.long {
+            &:before {
+                background-image: linear-gradient(transparent 0%, #121217);
+            }
+        }
+        
         img {
             width: 100%;
         }
@@ -255,6 +288,10 @@ article {
         
         @include media(smAndDown) {
             font-size: 1rem!important;
+
+            &.long {
+                font-size: 1.5rem!important;
+            }
         }
     }
     
@@ -264,6 +301,19 @@ article {
         position: absolute;
         bottom: 10px;
         width: 100%;
+        
+        &.long {
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            text-align: center;
+            bottom: auto;
+            
+            .featured__title {
+                font-family: $bebas;
+                letter-spacing: 1px;
+            }
+        }
         
         &--author {
             margin-bottom: 0;
@@ -290,7 +340,7 @@ article {
         display: flex;
         align-items: center;
         column-gap: 1rem;
-
+        
         @include media(smAndDown) {
             padding-left: $container-padding;
             padding-right: $container-padding;
@@ -345,6 +395,31 @@ article {
     @include media(smAndDown) {
         padding-left: $container-padding;
         padding-right: $container-padding;
+    }
+}
+
+.search {
+    position: absolute;
+    width: 100%;
+    background: #333;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: center;
+
+    &-bar {
+        background: #444;
+        color: white;
+        border: 0;
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    &-btn {
+        background: #444;
+        color: white;
+        font-size: 1.5rem;
+        border: 0;
     }
 }
 

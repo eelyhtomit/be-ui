@@ -45,13 +45,24 @@ if ($banner) { ?>
     </ul>
     <ul class="d-flex justify-between column-gap-5">
         <li>
+            <a href=""><i class="bi-twitter"></i></a>
+        </li>
+        <li>
             <a href=""><i class="bi-facebook"></i></a>
         </li>
         <li>
             <a href=""><i class="bi-instagram"></i></a>
         </li>
-        <li>
-            <a href=""><i class="bi-twitter"></i></a>
-        </li>
     </ul>
 </nav>
+<!-- 
+<div class="search p-3">
+    <div class="w-70">
+    <form class="d-flex">
+        <input type="text" value="" class="search-bar">
+        <button type="submit" role="button" aria-label="Search" class="search-btn">
+        <i class="bi bi-search"></i>
+        </button>
+    </form>
+    </div>
+</div> -->

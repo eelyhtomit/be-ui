@@ -6,13 +6,13 @@
 
         <ul class="d-flex justify-md-between column-gap-5 py-5">
             <li>
+                <a href=""><i class="bi-twitter"></i></a>
+            </li>
+            <li>
                 <a href=""><i class="bi-facebook"></i></a>
             </li>
             <li>
                 <a href=""><i class="bi-instagram"></i></a>
-            </li>
-            <li>
-                <a href=""><i class="bi-twitter"></i></a>
             </li>
         </ul>
     </div>
