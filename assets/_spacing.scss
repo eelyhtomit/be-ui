@@ -1,0 +1,100 @@
+$spaceAmounts: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 auto);
+
+@each $space in $spaceAmounts {
+  @if $space==auto {
+    .m-#{$space} {
+      margin: #{$space}!important;
+    }
+
+    .mx-#{$space} {
+      margin-left: #{$space}!important;
+      margin-right: #{$space}!important;
+    }
+
+    .my-#{$space} {
+      margin-top: #{$space}!important;
+      margin-bottom: #{$space}!important;
+
+    }
+
+    .ml-#{$space} {
+      margin-left: #{$space}!important;
+    }
+
+    .mr-#{$space} {
+      margin-right: #{$space}!important;
+    }
+
+    .mb-#{$space} {
+      margin-bottom: #{$space}!important;
+    }
+
+    .mt-#{$space} {
+      margin-top: #{$space}!important;
+    }
+  }
+
+  @else {
+    .m-#{$space} {
+      margin: calc(#{$space}px * 4)!important;
+    }
+
+    .mx-#{$space} {
+      margin-left: calc(#{$space}px * 4)!important;
+      margin-right: calc(#{$space}px * 4)!important;
+    }
+
+    .my-#{$space} {
+      margin-top: calc(#{$space}px * 4)!important;
+      margin-bottom: calc(#{$space}px * 4)!important;
+
+    }
+
+    .ml-#{$space} {
+      margin-left: calc(#{$space}px * 4)!important;
+    }
+
+    .mr-#{$space} {
+      margin-right: calc(#{$space}px * 4)!important;
+    }
+
+    .mb-#{$space} {
+      margin-bottom: calc(#{$space}px * 4)!important;
+    }
+
+    .mt-#{$space} {
+      margin-top: calc(#{$space}px * 4)!important;
+    }
+
+    .p-#{$space} {
+      padding: calc(#{$space}px * 4)!important;
+    }
+
+    .px-#{$space} {
+      padding-left: calc(#{$space}px * 4)!important;
+      padding-right: calc(#{$space}px * 4)!important;
+    }
+
+    .py-#{$space} {
+      padding-top: calc(#{$space}px * 4)!important;
+      padding-bottom: calc(#{$space}px * 4)!important;
+
+    }
+
+    .pl-#{$space} {
+      padding-left: calc(#{$space}px * 4)!important;
+    }
+
+    .pr-#{$space} {
+      padding-right: calc(#{$space}px * 4)!important;
+    }
+
+    .pb-#{$space} {
+      padding-bottom: calc(#{$space}px * 4)!important;
+    }
+
+    .pt-#{$space} {
+      padding-top: calc(#{$space}px * 4)!important;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+footer {
+    background: black;
+    color: white;
+    font-size: 1.2rem;
+    
+    ul {
+        padding-left: 0;
+        
+        li {
+            list-style-type: none;
+            
+            a {
+                color: white;
+                font-family: $bebas;
+
+                &:hover {
+                    color: $link-color;
+                }
+            }
+        }
+    }
+    
+    p {
+        font-family: $bebas;
+    }
+}
