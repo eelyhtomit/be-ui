@@ -5,6 +5,7 @@
     <title>MOCKUP Bloody Elbow</title>
     <meta data-n-head="ssr" name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -71,6 +72,8 @@
         <?php include('footer.php') ?>
 
     </div>
+    <script src="scripts.js"></script>
 </body>
+
 
 </html>

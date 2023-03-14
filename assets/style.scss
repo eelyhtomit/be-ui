@@ -106,12 +106,13 @@ article {
     
     .before {
         align-items: center;
-        color: white;
+        color: black;
         padding-left: $container-padding;
         
         @include media (sm) {
             display: flex;
             height: 50px;
+            color: white;
             background: white;
             color: $link-color;
         }
@@ -173,6 +174,18 @@ article {
     }
     &-twitter {
         color: #1DA1F2;
+    }
+    
+    &-facebook {
+        color: #1b74e4;
+    }
+    
+    &-reddit {
+        color: #ff4500;
+    }
+    
+    &-whatsapp {
+        color: #25D366;
     }
     
     &-white {
@@ -448,6 +461,28 @@ article {
         color: white;
         font-size: 1.5rem;
         border: 0;
+    }
+}
+
+.share {
+    &-icons {
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+.sticky {
+    &-top {
+        @include media(sm) {
+            position: sticky;
+            top: 0;
+            z-index: 9;
+            
+            .img-logo {
+                width: 150px!important;
+            }
+        }
     }
 }
 

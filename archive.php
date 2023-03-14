@@ -5,6 +5,7 @@
     <title>MOCKUP Bloody Elbow</title>
     <meta data-n-head="ssr" name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -15,7 +16,7 @@
             <div class="archive">
                 <div class="archive__author">
                     <?php
-                    $author = true;
+                    $author = false;
                     if ($author) { ?>
                         <div class="author column-gap-8 my-5">
                             <div>
@@ -40,7 +41,7 @@
                         </div>
                     <?php } else { ?>
                         <div class="archive__content">
-                            <h3>Archive/Tag/Author/Category</h3>
+                            <h3>Archive/Tag/Category</h3>
                         </div>
                     <?php } ?>
                 </div>
@@ -66,6 +67,7 @@
         <?php include('footer.php') ?>
 
     </div>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

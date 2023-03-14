@@ -5,6 +5,7 @@
     <title>MOCKUP Bloody Elbow</title>
     <meta data-n-head="ssr" name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -52,8 +53,11 @@
                     <article>
                         <img src="assets/img/long-1.jpg" class="w-100" alt="">
 
-                        <!-- share SNS placeholder -->
-                        <img src="assets/img/share.jpg" width="250" class="py-3">
+                        <!-- share SNS -->
+                        <?php
+                        $isTop = true;
+                        include('share-icons.php');
+                        ?>
 
                         <p>
                             Strawweight Tabatha Ricci scored her first finish in the Octagon just last Saturday. Paired
@@ -97,8 +101,13 @@
                             ocean and finishing them.”
                         </p>
 
-                        <!-- share SNS placeholder -->
-                        <img src="assets/img/share.jpg" width="250" class="py-3">
+                        <hr class="mb-5">
+
+                        <!-- share SNS -->
+                        <?php
+                        $isTop = false;
+                        include('share-icons.php');
+                        ?>
 
                         <span class="tag">
                             About the author
@@ -118,12 +127,11 @@
                                     ut venenatis eros. Aenean ac leo ante. Praesent at ipsum varius, ultrices mi in,
                                     venenatis lectus.
                                 </small>
-                                <div>
-                                    <a href="#" class="btn btn-secondary">More from the author</a>
-                                </div>
+                                <a href="#" class="btn btn-secondary">More from the author</a>
 
                             </div>
                         </div>
+
                     </article>
 
                     <!-- Regular feed -->
@@ -149,6 +157,7 @@
         <?php include('footer.php') ?>
 
     </div>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
