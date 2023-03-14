@@ -45,7 +45,7 @@ nav {
     transition: all 0.3s ease-in-out 0s;
     width: 25px;
     z-index: 9999;
-    margin-left: 10px;
+    margin-left: 1rem;
     
     span {
         background: white;
@@ -59,17 +59,17 @@ nav {
         width: 100%;
         
         &:first-child {
-            top: 0;
+            top: 2px;
             transform-origin: left center;
         }
         
         &:nth-child(2) {
-            top: 9px;
+            top: 11px;
             transform-origin: left center;
         }
         
         &:nth-child(3) {
-            top: 18px;
+            top: 20px;
             transform-origin: left center;
         }
     }

@@ -4429,7 +4429,7 @@ nav ul li a:hover {
   transition: all 0.3s ease-in-out 0s;
   width: 25px;
   z-index: 9999;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 .menu-btn span {
   background: white;
@@ -4443,15 +4443,15 @@ nav ul li a:hover {
   width: 100%;
 }
 .menu-btn span:first-child {
-  top: 0;
+  top: 2px;
   transform-origin: left center;
 }
 .menu-btn span:nth-child(2) {
-  top: 9px;
+  top: 11px;
   transform-origin: left center;
 }
 .menu-btn span:nth-child(3) {
-  top: 18px;
+  top: 20px;
   transform-origin: left center;
 }
 .menu-btn.open span:first-child {
@@ -4928,6 +4928,9 @@ article p {
     position: sticky;
     top: 0;
     z-index: 9;
+  }
+  .sticky-top .menu-btn {
+    display: block !important;
   }
   .sticky-top .img-logo {
     width: 150px !important;
