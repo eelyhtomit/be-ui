@@ -1,21 +1,16 @@
 <?php
 $banner = true;
-if ($banner) { ?>
-    <div class="banner">
-        <div class="before">
-            <h5 class="d-inline-block text-nowrap">BREAKING NEWS</h5>
-            <span class="after"></span>
-        </div>
-        <h5 class="after-text">Fighter X arrested AGAIN, UFC XXX cancelled</h5>
-    </div>
-<?php } ?>
+if ($banner) {
+    include('banner.php');
+}
+?>
 
 <header class="d-flex justify-between align-center">
-    <span class="d-none d-md-block" style="width:150px"></span>
+    <span class="d-none d-md-block" style="flex: 1"></span>
     <a href="/">
-        <img src="assets/img/logo.png" width="200" alt="Bloody Elbow Logo">
+        <img src="assets/img/logo.png" class="img-logo" alt="Bloody Elbow Logo" style="flex: 1">
     </a>
-    <div class="d-flex align-center">
+    <div class="d-flex align-center justify-end" style="flex: 1">
         <a href="#" class="btn btn-primary">Subscribe</a>
         <div class="menu-btn d-md-none">
             <span></span>
@@ -55,14 +50,5 @@ if ($banner) { ?>
         </li>
     </ul>
 </nav>
-<!-- 
-<div class="search p-3">
-    <div class="w-70">
-    <form class="d-flex">
-        <input type="text" value="" class="search-bar">
-        <button type="submit" role="button" aria-label="Search" class="search-btn">
-        <i class="bi bi-search"></i>
-        </button>
-    </form>
-    </div>
-</div> -->
+
+<!-- <?php include('search.php'); ?> -->
