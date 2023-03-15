@@ -13,42 +13,14 @@
         <?php include('header.php') ?>
 
         <main class="home-page">
-            <div class="home-page__top">
+            <div class="home-page__top featured dark">
                 <!-- Featured Artcles -->
                 <?php
-                for ($i = 1; $i <= 6; $i++) { ?>
-                    <div class="featured">
-                        <a href="single.php" class="featured__image">
-                            <img src="assets/img/feature-<?= $i ?>.jpg">
-                        </a>
-                        <div class="featured__content">
-                            <div class="tags">
-                                <span class="tag">
-                                    UFC230
-                                </span>
-                                <span class="tag">
-                                    Power Slap
-                                </span>
-                                <span class="tag">
-                                    Jon Jones
-                                </span>
-                            </div>
-                            <a href="single.php" class="featured__title">Lorem ipsum dolor sit amet consectetur adipiscing
-                                elit,
-                                Integer
-                                in
-                                pulvinar odio.</a>
-                            <div class="featured__content--author d-flex justify-between">
-                                <span>Nate Wilcox</span>
-                                <a href="single.php" class="featured__content--count d-flex">
-                                    <i class="bi bi-chat-left-fill pr-1"></i>
-
-                                    214
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                <?php } ?>
+                $feature = true;
+                for ($i = 1; $i <= 6; $i++) { 
+                    include('feed.php');
+                 } 
+                 ?>
             </div>
 
             <!-- Regular feed -->
@@ -65,9 +37,8 @@
                     </div>
                 </div>
 
-                <aside class="d-none d-md-block">
-                    <div style="width: 100%; height: 800px; background: #999"></div>
-                </aside>
+                <?php include('aside.php'); ?>
+
             </div>
 
 

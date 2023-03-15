@@ -13,27 +13,10 @@
         <?php include('header.php') ?>
 
         <main>
-            <div class="featured long">
-                <a href="single.php" class="featured__image long">
-                    <img src="assets/img/long-1.jpg">
-                </a>
-                <div class="featured__content long w-md-70">
-                    <div class="tags justify-center">
-                        <span class="tag">
-                            UFC Editorial
-                        </span>
-                    </div>
-                    <h3 class="featured__title long">Feature: The rebellious roots of Conor McGregor’s walkout song</h3>
-                    <p>‘The Foggy Dew’ is more than just a song for the people of Ireland. It’s a window into Éire’s history, identity, and perhaps the heart of one of her most famous fighters.</p>
-                    <div class="featured__content--author d-flex justify-center">
-                        <span>By: Nate Wilcox&nbsp;&nbsp;|&nbsp;&nbsp;Apr 1, 2023&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                        <a href="single.php" class="featured__content--count d-flex">
-                            <i class="bi bi-chat-left-fill pr-1"></i>
-
-                            214
-                        </a>
-                    </div>
-                </div>
+            <div class="featured long dark">
+                <?php
+                $i = 4;
+                include('feed.php') ?>
             </div>
 
             <div class="single">
@@ -94,18 +77,16 @@
                                 <img src="assets/img/author.jpg" width="150" class="author__img">
                             </div>
                             <div>
-                                <span class="d-flex justify-center justify-md-initial align-center column-gap-2">
-                                    <h6 class="mb-0">Nathan Wilcox</h6>
+                                <div class="d-flex justify-center justify-md-initial align-center column-gap-3">
+                                    <div class="author__heading">Nathan Wilcox</div>
                                     <a href=""><i class="bi-twitter color-twitter"></i></a>
-                                </span>
+                                </div>
                                 <small class="d-block mb-3">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in pulvinar odio,
                                     ut venenatis eros. Aenean ac leo ante. Praesent at ipsum varius, ultrices mi in,
                                     venenatis lectus.
                                 </small>
-                                <div>
-                                    <a href="#" class="btn btn-secondary">More from the author</a>
-                                </div>
+                                <a href="#" class="btn btn-secondary">More from the author</a>
 
                             </div>
                         </div>

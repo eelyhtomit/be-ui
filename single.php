@@ -117,10 +117,10 @@
                                 <img src="assets/img/author.jpg" width="150" class="author__img">
                             </div>
                             <div>
-                                <span class="d-flex justify-center justify-md-initial align-center column-gap-2">
-                                    <h6 class="mb-0">Nathan Wilcox</h6>
+                                <div class="d-flex justify-center justify-md-initial align-center column-gap-3">
+                                    <div class="author__heading">Nathan Wilcox</div>
                                     <a href=""><i class="bi-twitter color-twitter"></i></a>
-                                </span>
+                                </div>
                                 <small class="d-block mb-3">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in pulvinar odio,
                                     ut venenatis eros. Aenean ac leo ante. Praesent at ipsum varius, ultrices mi in,
@@ -150,9 +150,8 @@
                         </div>
                     </div>
                 </div>
-                <aside class="d-none d-md-block">
-                    <div style="width: 100%; height: 800px; background: #999"></div>
-                </aside>
+                <?php include('aside.php'); ?>
+
             </div>
 
         </main>

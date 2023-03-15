@@ -60,9 +60,7 @@
                         <a href="#" class="btn btn-secondary">Read more</a>
                     </div>
                 </div>
-                <aside class="d-none d-md-block">
-                    <div style="width: 100%; height: 800px; background: #999"></div>
-                </aside>
+                <?php include('aside.php'); ?>
             </div>
 
         </main>
