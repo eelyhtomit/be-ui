@@ -3,8 +3,7 @@
 
 <head>
     <title>MOCKUP Bloody Elbow</title>
-    <meta data-n-head="ssr" name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -25,7 +24,7 @@
                         </span>
                     </div>
                     <h3 class="featured__title long">Feature: The rebellious roots of Conor McGregor’s walkout song</h3>
-                        <p>‘The Foggy Dew’ is more than just a song for the people of Ireland. It’s a window into Éire’s history, identity, and perhaps the heart of one of her most famous fighters.</p>
+                    <p>‘The Foggy Dew’ is more than just a song for the people of Ireland. It’s a window into Éire’s history, identity, and perhaps the heart of one of her most famous fighters.</p>
                     <div class="featured__content--author d-flex justify-center">
                         <span>By: Nate Wilcox&nbsp;&nbsp;|&nbsp;&nbsp;Apr 1, 2023&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                         <a href="single.php" class="featured__content--count d-flex">
@@ -63,7 +62,7 @@
                         <div class="action">
                             <p>
                                 <em>
-                                In order to prevent the further slaughter of Dublin citizens, and in the hope of saving the lives of our followers now surrounded and hopelessly outnumbered, the members of the Provisional Government present at headquarters have agreed to an unconditional surrender, and the commandants of the various districts in the City and County will order their commands to lay down arms. - Patrick Pearse, April 29th, 1916
+                                    In order to prevent the further slaughter of Dublin citizens, and in the hope of saving the lives of our followers now surrounded and hopelessly outnumbered, the members of the Provisional Government present at headquarters have agreed to an unconditional surrender, and the commandants of the various districts in the City and County will order their commands to lay down arms. - Patrick Pearse, April 29th, 1916
                                 </em>
                             </p>
                         </div>
@@ -121,8 +120,12 @@
                         <?php
                         for ($i = 1; $i < 6; $i++) {
                             include('feed.php');
-                            } 
-                            ?>
+                        }
+                        ?>
+
+                        <div class="text-center py-5">
+                            <a href="#" class="btn btn-secondary">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,10 +140,10 @@
 </body>
 
 <style>
-.single {
-    max-width: 700px;
-    margin: auto;
-}
+    .single {
+        max-width: 700px;
+        margin: auto;
+    }
 </style>
 
 </html>
